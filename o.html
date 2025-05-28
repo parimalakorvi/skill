@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color:rgb(163, 163, 203);
+        }
+        .navbar {
+            background-color: whitesmoke;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .top-section, .cards, .achievements {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .image-box, .about-box, .card, .achievements-box {
+            background-color: #00aaff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            flex: 1;
+            border-radius: 8px;
+        }
+        .image-box img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .about-box {
+            flex: 2;
+            text-align: left;
+        }
+        .card {
+            min-width: 200px;
+        }
+        .achievements-box {
+            width: 100%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">Student Profile</div>
+
+    <div class="container">
+        <div class="top-section">
+            <div class="image-box">
+                <img src="https://via.placeholder.com/150" alt="Student Photo">
+                <p><strong>PARIMALA</strong></p>
+            </div>
+            <div class="about-box">
+                <h3>About Me</h3>
+                <p>I am a passionate student pursuing Computer Science. I love web development, data science, and playing chess in my free time. My goal is to become a full-stack developer.</p>
+            </div>
+        </div>
+
+    
+        <div class="cards">
+            <div class="card">
+                <h4>School Info</h4>
+                <img src="s.jpg" alt="">
+                <p>SRI SHANTAMURTI High School</p>
+                <p>Grade: 10</p>
+                <p>Year: 2022-23</p>
+            </div>
+            <div class="card">
+                <h4>PU Info</h4>
+                <p>Sri Vidyaniketan PU College</p>
+                <p>Course: PCMC</p>
+                <p>Year: 2023-25</p>
+            </div>
+            <div class="card">
+                <h4>Engineering Info</h4>
+                <p>DR.Ambedkar Institute of Technology</p>
+                <p>Branch: CSE</p>
+                <p>Expected Graduation: 2029</p>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="achievements">
+            <div class="achievements-box">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Won 1st place in Inter-school Science Fair (2022)</li>
+                    <li>Top 5% in National Coding Challenge (2024)</li>
+                    <li>Published a blog on Machine Learning with 5K+ views</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

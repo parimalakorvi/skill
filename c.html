@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canteen</title>
+</head>
+
+<body>
+    <center><h1 style="border:2px solid blue";>WELCOME TO CANTEEN</h1></center>
+    <label for="">IDLI-Rs.20</label>
+    <input type="number" name="" id="idli">
+    <br><br>
+    <label for="">DOSA-Rs.50</label>
+    <input type="number" name="" id="dosa">
+     <br><br>
+    <label for="">POORI-Rs.35</label>
+    <input type="number" name="" id="poori">
+     <br><br>
+    <label for="">RICE-SAMBAR-Rs.60</label>
+    <input type="number" name="" id="rice">
+     <br><br>
+    <label for="">PAROTA-55</label>
+    <input type="number" name="" id="paro">
+     <br><br>
+    <label for="">ROTI-Rs.40</label>
+    <input type="number" name="" id="roti">
+     <br><br>
+     <button onclick="bill()">Submit</button>
+     <script>
+        function bill(){
+            var idli=document.getElementById("idli").value;
+            var dosa=document.getElementById("dosa").value;
+            var poori=document.getElementById("poori").value;
+            var rice=document.getElementById("rice").value;
+            var paro=document.getElementById("paro").value;
+            var roti=document.getElementById("roti").value;
+            var total=(idli*20)+(dosa*50)+(rice*60)+(poori*35)+(paro*55)+(rice*40);
+            alert(total);
+
+        }
+     </script>
+</body>
+</html>

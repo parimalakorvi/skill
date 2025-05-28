@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+</head>
+<body>
+   
+        <center> <h1 style="border:2px solid Tomato;"">CHECK YOUR RESULT</h1>
+    <label for="" style="font-size: x-large;">Name:</label>
+    <input type="text" name="" id="uname" placeholder="Enter your name">
+    <br><br><br>
+   <button onclick="per()">check</button>
+   <p id="res"></p>
+</center>
+  <script>
+    function per(){
+        var uname=document.getElementById("uname").value;
+        var per=Math.random()*100;
+        var res=document.getElementById("res");
+        res.innerHTML="The result is" + per;
+    }
+  </script>
+</body>
+</html>
